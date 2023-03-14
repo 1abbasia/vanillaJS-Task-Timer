@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Timer App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Task Timer App</h1>
+
+    <form>
+      <label for="task-name">Task Name:</label>
+      <input type="text" id="task-name" name="task-name">
+      <label for="task-duration">Duration (minutes):</label>
+      <input type="number" id="task-duration" name="task-duration">
+      <button type="submit" id="add-task-btn">Add Task</button>
+    </form>
+
+    <div id="timer-container">
+      <h2 id="timer"></h2>
+      <button type="button" id="start-timer-btn">Start</button>
+      <button type="button" id="stop-timer-btn">Stop</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Task Name</th>
+          <th>Duration (minutes)</th>
+          <th>Start Time</th>
+          <th>End Time</th>
+        </tr>
+      </thead>
+      <tbody id="task-history">
+      </tbody>
+    </table>
+
+    <script src="app.js"></script>
+  </body>
+</html>
